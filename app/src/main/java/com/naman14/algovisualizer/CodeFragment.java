@@ -58,7 +58,7 @@ public class CodeFragment extends Fragment {
         if (codeLayout != null) {
             codeLayout.removeAllViews();
             switch (key) {
-                case Algorithm.BUBBLE_SORT:
+                case Algorithm.BUBBLE_SORT://将源代码片段加入视图
                     addCodeItem(AlgorithmCode.CODE_BUBBLE_SORT, "Bubble sort");
                     break;
                 case Algorithm.INSERTION_SORT:

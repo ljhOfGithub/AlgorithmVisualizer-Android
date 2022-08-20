@@ -36,7 +36,7 @@ import java.util.Iterator;
 
 public class AlgoDescriptionFragment extends Fragment {
 
-    LinearLayout rootView;
+    LinearLayout rootView;//线性视图
     String descJson;
     JSONObject descObject;
 
