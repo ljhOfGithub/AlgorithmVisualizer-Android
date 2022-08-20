@@ -18,7 +18,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
+import android.graphics.Path;//用于画多边形的类
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -61,7 +61,7 @@ public class ArrayVisualizer extends View {
         highlightPaint.setColor(Color.BLUE);
         highlightPaint.setTextSize(getDimensionInPixelFromSP(25));
 
-        containerPaint.setStyle(Paint.Style.STROKE);
+        containerPaint.setStyle(Paint.Style.STROKE);//多边形颜色
         containerPaint.setColor(Color.BLACK);
         containerPaint.setStrokeWidth(5);
 
@@ -112,7 +112,7 @@ public class ArrayVisualizer extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        //绘制数组及其元素
         containerPath.moveTo(getDimensionInPixel(40), getDimensionInPixel(5));
         containerPath.lineTo(getWidth() - getDimensionInPixel(40), getDimensionInPixel(5));
         containerPath.lineTo(getWidth() - getDimensionInPixel(40), getDimensionInPixel(45));

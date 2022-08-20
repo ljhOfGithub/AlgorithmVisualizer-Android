@@ -31,7 +31,7 @@ public class SortingVisualizer extends AlgorithmVisualizer {
 
     int highlightPositionOne = -1, highlightPositionTwo = -1;
     int highlightPosition = -1;
-    int lineStrokeWidth = getDimensionInPixel(10);
+    int lineStrokeWidth = getDimensionInPixel(10);//把dimens.xml文件中的dp或sp数值乘以屏幕scale来换算成px单位，使用自适应尺寸
 
     public SortingVisualizer(Context context) {
         super(context);
