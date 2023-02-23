@@ -20,7 +20,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-
+//排序可视化
 public class SortingVisualizer extends AlgorithmVisualizer {
 
     Paint paint;

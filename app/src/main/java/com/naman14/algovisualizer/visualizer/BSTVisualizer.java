@@ -118,7 +118,7 @@ public class BSTVisualizer extends AlgorithmVisualizer {
         this.b = b;
         invalidate();
     }
-
+//画二叉树
     private void drawBst(Canvas canvas) {
 
 

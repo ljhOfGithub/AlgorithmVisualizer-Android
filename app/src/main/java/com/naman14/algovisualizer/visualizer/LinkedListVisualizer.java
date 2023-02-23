@@ -23,7 +23,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 
 import com.naman14.algovisualizer.algorithm.list.LinkedList;
-
+//画链表，不是柱形图
 public class LinkedListVisualizer extends AlgorithmVisualizer {
 
     int[] array;

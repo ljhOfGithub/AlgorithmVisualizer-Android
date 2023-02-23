@@ -29,9 +29,9 @@ import com.roughike.bottombar.BottomBar;
 public class LinkedListControls extends LinearLayout {
 
     LinkedList linkedList;
-    BottomBar bottomBar;
+    BottomBar bottomBar;//按钮栏
     FloatingActionButton fab;
-
+    //初始化链表界面，设置添加等功能
     public LinkedListControls(Context context, BottomBar bottomBar, FloatingActionButton fab) {
         super(context);
         this.bottomBar = bottomBar;
@@ -56,11 +56,11 @@ public class LinkedListControls extends LinearLayout {
 
         final Button add, deleteFront, traverse;
 
-        add = (Button) controls.findViewById(R.id.llc_add);
+        add = (Button) controls.findViewById(R.id.llc_add);//添加按钮
         deleteFront = (Button) controls.findViewById(R.id.llc_delete_front);
         traverse = (Button) controls.findViewById(R.id.llc_traverse);
 
-        add.setOnClickListener(new OnClickListener() {
+        add.setOnClickListener(new OnClickListener() {//使用添加功能
             @Override
             public void onClick(View v) {
                 bottomBar.selectTabAtPosition(1,true);
