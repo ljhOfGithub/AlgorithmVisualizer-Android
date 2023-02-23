@@ -19,7 +19,7 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
-
+//设置设备的大小尺寸
 public abstract class AlgorithmVisualizer extends View {
 
     public AlgorithmVisualizer(Context context) {

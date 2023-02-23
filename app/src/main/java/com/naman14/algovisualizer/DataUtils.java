@@ -31,9 +31,9 @@ import java.util.Collections;
 import java.util.Random;
 
 public class DataUtils {
-
+    //二叉树
     public static final int[] bst_array = {5, 8, 10, 3, 1, 6, 9, 7, 2, 0};
-
+    //二叉树
     public static final int[][] bst = {
             {5, 8, 10, 3, 1, 6, 9, 7, 2, 0}, //nodes
             {3, 6, 9, 1, 0, 7, -1, -1, -1, -1}, //left child of nodes
@@ -72,7 +72,7 @@ public class DataUtils {
         return b;
 
     }
-
+    //创建链表
     public static LinkedList createLinkedList() {
         LinkedList ll = new LinkedList();
         int[] array = createUniqueRandomArray(5);
@@ -82,7 +82,7 @@ public class DataUtils {
         return ll;
 
     }
-
+    
     public static Stack createStack() {
         Stack stack = new Stack(8);
         ArrayList<Integer> a = new ArrayList<>();

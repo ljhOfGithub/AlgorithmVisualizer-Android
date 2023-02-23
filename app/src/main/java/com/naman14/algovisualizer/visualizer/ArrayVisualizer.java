@@ -18,7 +18,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;//用于画多边形的类
+import android.graphics.Path;//用于画多边形的类，用来画柱形图
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;

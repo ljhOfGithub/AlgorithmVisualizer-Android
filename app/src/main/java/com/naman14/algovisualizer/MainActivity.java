@@ -72,21 +72,21 @@ public class MainActivity extends AppCompatActivity {
         expandableList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int groupPosition, int childPosition, long l) {
-                switch (groupPosition) {
+                switch (groupPosition) {//算法默认分组
                     case 0:
                         switch (childPosition) {
                             case 0:
-                                algoFragment.setupFragment(Algorithm.BINARY_SEARCH);
+                                algoFragment.setupFragment(Algorithm.BINARY_SEARCH);//二叉查找
                                 break;
                             case 1:
-                                algoFragment.setupFragment(Algorithm.LINEAR_SEARCH);
+                                algoFragment.setupFragment(Algorithm.LINEAR_SEARCH);//线性查找
                                 break;
                         }
                         break;
                     case 1:
                         switch (childPosition) {
                             case 0:
-                                algoFragment.setupFragment(Algorithm.BUBBLE_SORT);
+                                algoFragment.setupFragment(Algorithm.BUBBLE_SORT);//冒泡排序
                                 break;
                             case 1:
                                 algoFragment.setupFragment(Algorithm.INSERTION_SORT);
@@ -102,11 +102,11 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         switch (childPosition) {
                             case 0:
-                                algoFragment.setStartCommand(BSTAlgorithm.START_BST_SEARCH);
+                                algoFragment.setStartCommand(BSTAlgorithm.START_BST_SEARCH);//查找
                                 algoFragment.setupFragment(Algorithm.BST_SEARCH);
                                 break;
                             case 1:
-                                algoFragment.setStartCommand(BSTAlgorithm.START_BST_INSERT);
+                                algoFragment.setStartCommand(BSTAlgorithm.START_BST_INSERT);//插入
                                 algoFragment.setupFragment(Algorithm.BST_INSERT);
                                 break;
                         }
@@ -124,18 +124,18 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         switch (childPosition) {
                             case 0:
-                                algoFragment.setStartCommand(GraphTraversalAlgorithm.TRAVERSE_BFS);
+                                algoFragment.setStartCommand(GraphTraversalAlgorithm.TRAVERSE_BFS);//广搜
                                 algoFragment.setupFragment(Algorithm.BFS);
                                 break;
                             case 1:
-                                algoFragment.setStartCommand(GraphTraversalAlgorithm.TRAVERSE_DFS);
+                                algoFragment.setStartCommand(GraphTraversalAlgorithm.TRAVERSE_DFS);//深搜
                                 algoFragment.setupFragment(Algorithm.DFS);
                                 break;
                             case 2:
-                                algoFragment.setupFragment(Algorithm.DIJKSTRA);
+                                algoFragment.setupFragment(Algorithm.DIJKSTRA);//迪杰斯特拉
                                 break;
                             case 3:
-                                algoFragment.setupFragment(Algorithm.BELLMAN_FORD);
+                                algoFragment.setupFragment(Algorithm.BELLMAN_FORD);//
                                 break;
                         }
                         break;

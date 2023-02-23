@@ -24,7 +24,7 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.List;
-
+//可扩展的算法列表对象
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
     private Context mContext;
     private List<ExpandedMenuModel> mListDataHeader;
@@ -40,7 +40,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public int getGroupCount() {
+    public int getGroupCount() {//组的算法数
         int i = mListDataHeader.size();
         return this.mListDataHeader.size();
     }
